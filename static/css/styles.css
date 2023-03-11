@@ -10,6 +10,12 @@ h1 {
     text-shadow: 1.5px 1.0px 1.0px hsl(0deg 0% 0% / 0.45);
 }
 
+.body-text {
+    font-size: 20px;
+    width: 50%;
+    margin:auto;
+}
+
 nav ul {
     box-shadow: 1.5px 3.0px 3.0px hsl(0deg 0% 0% / 0.45);
     list-style-type: none;
