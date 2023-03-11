@@ -18,7 +18,7 @@
         <ul>
             <div class="nav-container">
                 {% for page in active %}
-                <li><a href="{{ page }}.html" class="{% if active[page] %}active{% endif %}">{{ page }}</a></li>
+                <li><a href="{{ page }}" class="{% if active[page] %}active{% endif %}">{{ page }}</a></li>
                 {% endfor %}
             </div>
         </ul>
