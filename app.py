@@ -43,12 +43,14 @@ def upload():
         img = Image.open(f)
         img = img.resize((224, 224))
         img = img.convert('RGB')
-        img.save('static/img/uploaded.jpg')
         img = np.array(img).reshape(-1, 224, 224, 3)
 
         prediction = model.predict(img)
 
-        print(prediction)
+        if prediction[0][0] > prediction[0][1]:
+            prediction = 'You are not predicted to have melanoma. Please continue to monitor your skin for any changes.'
+        else:
+            prediction = 'You are predicted to have melanoma. Please see a dermatologist for further evaluation.'
 
         return render_template('result.html', prediction=prediction, active={
             'home': False,

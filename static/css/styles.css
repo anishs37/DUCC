@@ -8,6 +8,7 @@ body {
 h1 {
     font-family: 'Lexend', sans-serif;
     text-shadow: 1.5px 1.0px 1.0px hsl(0deg 0% 0% / 0.45);
+    margin-top: 5px;
 }
 
 h2 {
@@ -19,6 +20,13 @@ h2 {
 
 #methods p {
     margin-top: 5px;
+}
+
+p#results {
+    font-size: 25px;
+    width: 85%;
+    margin:auto;
+    margin-bottom: 10px;
 }
 
 .body-text {
@@ -48,7 +56,7 @@ h2 {
 .column-text {
     width:80%;
     margin:auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav ul {
