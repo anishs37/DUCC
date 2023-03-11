@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.U.C.C</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="nav-container">
+                {% for page in active %}
+                <li><a href="{{ page }}.html" class="{% if active[page] %}active{% endif %}">{{ page }}</a></li>
+                {% endfor %}
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>{% block title %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <p>© 2021 D.U.C.C</p>
+    </footer>
+</body>
+</html>
