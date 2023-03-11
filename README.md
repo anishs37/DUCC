@@ -30,6 +30,12 @@ D.U.C.C. (Dermatological Underlying Cancer Classification) is a tool for users t
 
 For this project, we utilized the _[HAM10000 Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)_, a large collection of skin images, some being positive samples (where the patient has melanoma) and some being negative samples (where the patient does not have melanoma).
 
+<!-- Model -->
+
+## Model
+
+[InceptionV3](https://doi.org/10.48550/arXiv.1512.00567)
+
 
 <!-- Contact -->
 
