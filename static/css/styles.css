@@ -10,10 +10,45 @@ h1 {
     text-shadow: 1.5px 1.0px 1.0px hsl(0deg 0% 0% / 0.45);
 }
 
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+#methods p {
+    margin-top: 5px;
+}
+
 .body-text {
     font-size: 20px;
-    width: 50%;
+    width: 85%;
     margin:auto;
+}
+
+#methods {
+    font-size: 15px;
+}
+
+#methods a {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+.column-text {
+    width:80%;
+    margin:auto;
+    font-size: 20px;
 }
 
 nav ul {
@@ -63,10 +98,10 @@ nav li a:hover {
     border-radius: 20px;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -65%);
+    transform: translate(-50%, -65%);
 }
 
 .inner-container {
@@ -75,7 +110,7 @@ nav li a:hover {
     width: max-content;
 }
 
-.inner-container a {
+.button {
     box-shadow: 1.5px 3.0px 3.0px hsl(0deg 0% 0% / 0.45);
     background: linear-gradient(to right, #e8b600 50%, #d98326 50%);
     background-size: 200% 100%;
@@ -86,15 +121,23 @@ nav li a:hover {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
     transition: all .25s ease-in-out;
     margin-inline: 20px;
     text-decoration: none;
 }
 
-.inner-container a:hover {
+.button:hover {
     background-position: left bottom;
+} 
+
+.link {
+    color:#d98326;
+}
+
+.link:hover {
+    color:#e8b600;
 }
 
 /* form */
@@ -112,6 +155,8 @@ input {
 }
 
 input[type="submit"] {
+    background-color: #d98326;
+    color:white;
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -120,7 +165,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #d98326;
+    background-color: #e8b600;
     color: white;
 }
 

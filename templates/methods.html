@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Methods{% endblock %}
+{% block content %}
+<div class="body-text" id="methods">
+    <h2>Data</h2>
+    <p>
+        This proprietary tool works through a Machine Learning model. Our data is trained on the HAM10000 dataset 
+        (Human Against Machine with 10000 training images) provided by the Harvard Dataverse. The dermoscopic images have been normalized and validated by a consensus of dermatologists. 
+    </p>
+    <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T" target="_blank">Dataset</a>
+
+    <h2>Model</h2>
+    <p>
+        InceptionV3 is a convolutional neural network architecture developed by Google researchers Christian Szegedy, 
+        Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and Zbigniew Wojna in 2015. It is an extension of the original Inception 
+        architecture and was designed to achieve better accuracy on the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 
+        dataset.
+    </p>
+    <p>
+        The main idea behind InceptionV3 is to use multiple levels of feature extraction, with each level using a combination of 
+        different convolutional filters of varying sizes. This allows the network to capture features at different scales and resolutions, 
+        which is particularly useful for image classification tasks where objects can vary in size and shape. 
+    </p>   
+    <p> 
+        InceptionV3 also makes use of a variety of techniques to reduce overfitting, including batch normalization, dropout, and 
+        label smoothing. The architecture also includes an auxiliary classifier, which encourages the network to learn more discriminative 
+        features at intermediate layers. <br>
+    </p>
+    <a href="https://doi.org/10.48550/arXiv.1512.00567" target="_blank">Read more about InceptionV3</a>
+
+    <h2>Evaluation</h2>
+
+</div>
+
+
+{% endblock %}
