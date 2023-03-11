@@ -9,8 +9,10 @@ h1 {
     text-shadow: 1.5px 1.0px 1.0px hsl(0deg 0% 0% / 0.45);
 }
 
-p {
-    font-size : 13;
+.body-text {
+    font-size: 20px;
+    width: 50%;
+    margin:auto;
 }
 
 nav ul {
